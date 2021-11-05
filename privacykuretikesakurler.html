@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./styles.css">
+        <script src="./script/custom.js"></script>
+		<title>lupenit</title>
+
+	</head>
+	<body class="bg-white font-sans">
+        <!--PRELOADER-->
+        <div id='preloader'>
+            <img src="./images/heart.gif" alt="preloader">
+        </div>
+
+			<header class="bg-white relative z-20">
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="./index.html" class="flex items-center py-4 px-2">
+                  <span class="font-semibold text-gray-500 text-lg">lupenit</span>
+                </a>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="hidden md:flex items-center space-x-1">
+                <a href="./index.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Maison</a>
+                <a href="./privacykuretikesakurler.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Politique de confidentialité</a>
+                <a href="./contactuserinekorlaser.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">En contact avec nous</a>
+              </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3 ">
+              <a href="./index.html" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Connexion</a>
+              <a href="./index.html" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">S'identifier</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="">
+            <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Maison</a></li>
+            <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Politique de confidentialité</a></li>
+            <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">En contact avec nous</a></li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+  
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+		</header>
+
+<div class="relative bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="50,0 100,0 50,100 0,100" />
+      </svg>
+
+      <div>
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+        </div>
+
+        <!--
+          Mobile menu, show/hide based on menu open state.
+
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+        <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        </div>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline">Blog</span>
+            <span class="block text-green-500 xl:inline">meilleures relations</span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Notre édition a choisi les meilleurs articles liés aux relations
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./images/top-top.jpg" alt="Background">
+  </div>
+</div>
+        <div class="bg-gray-100 py-24 px-12">
+			<div class="container mx-auto">
+
+				<div class="flex flex-wrap">
+
+					<div class="mb-12 lg:mb-0 w-full lg:flex-1">
+						<h1 class="mb-4 font-black leading-tight text-3xl md:text-3xl text-gray-900 text-center"></h1>
+            <h2 class="text-3xl md:text-3xl mb-8 text-center uppercase font-black">Politique de confidentialité</h2>
+            <p class="text-xl pb-5">Cette politique de confidentialité explique comment vous êtes utilisé et partage vos informations personnelles lorsque vous visitez ou achetez sur le site.</p>
+              <p class="text-xl pb-5">Informations personnelles que nous collectons</p>
+              <p class="text-xl pb-5">Lorsque vous visitez le site Web, nous collectons automatiquement des informations sur le périphérique, y compris des informations sur votre navigateur Web, votre adresse IP, votre fuseau horaire et dans certains cookies installés sur votre appareil.Plus, si vous surfez sur la navigation du site Web.Nous collectons des informations sur chaque site Web ou visites, par exemple.Home Sites Web ou termes de recherche, consultez le site Web et les informations tout en interagissant avec le site Web. Cette information collecte automatiquement les "Informations d'appel sur Tone".</p>
+              <p class="text-xl pb-5">Nous collectons des informations sur l'appareil avec des technologies imprimées:</p>
+              <p class="text-xl pb-5">Les "fichiers journaux" suivent les tâches effectuées sur le site et la collecte de données, y compris l'adresse IP, le type de navigateur, le fournisseur de services Internet, les pages de connexion / sortie et les marques de données / horloge.</p>
+              <p class="text-xl pb-5">"Beacons Web", "Étiquette" et "Pixel" sont des fichiers électroniques utilisés pour enregistrer des informations sur la navigation du site.</p>
+              <p class="text-xl pb-5">Numéro de téléphone Cette information s'appelle "Informations de la commande".</p>
+              <p class="text-xl pb-5">Si nous parlons de «informations personnelles» dans cette politique de confidentialité, nous parlons également de périphériques et d'informations de commande.</p>
+              <p class="text-xl pb-5">Comment utilisons-nous vos informations personnelles?</p>
+              <p class="text-xl pb-5">Les informations de commande généralement collectées sont utilisées pour répondre aux commandes en position (y compris le traitement des informations de paiement, l'organisation de livraison et la fourniture de factures et / ou de confirmation de confirmation).</p>
+              <p class="text-xl pb-5">Nous utilisons les données de l'appareil que nous avons assemblées pour identifier les risques et la fraude potentiels (en particulier votre adresse IP), et améliorer et optimiser notre site Web.</p>
+              <p class="text-xl pb-5">Partager des informations personnelles.</p>
+              <p class="text-xl pb-5">Nous partageons vos informations personnelles avec des tiers pour nous aider à utiliser vos données personnelles telles que décrites ci-dessus. Nous utilisons également Google Analytics pour comprendre comment nos clients utilisent le site Web: obtenir plus d'informations sur la manière dont Google utilise vos informations personnelles: HTTPS: / / www.google.com / INTL / FR / GuidAIRE / Confidentialité / Petit Vous pouvez également annuler la connexion Google Analytics à https://tools.google.com/dlpage/gaoptout.</p>
+              <p class="text-xl pb-5">Enfin, nous pouvons partager vos informations personnelles pour répondre aux lois et règlements applicables, à répondre aux cotisations, aux ordonnances de registre ou à d'autres demandes de renseignements légitimes ou à protéger nos droits.</p>
+              <p class="text-xl pb-5">Afficher</p>
+              <p class="text-xl pb-5">Comme décrit ci-dessus, nous utilisons vos informations personnelles pour fournir des communications de publicité ou de marketing direct susceptibles d'être intéressées par notre opinion. Pour plus d'informations sur la page de publipostage, reportez-vous à la page de publicité réseau à l'adresse http: // www. Networkadvertising.org / ST-ONLINES-DVERING / HOW-DOS-ET - Le site web du travail.</p>
+              <p class="text-xl pb-5">Il peut être exclu de l'affichage à LED de liens de liaison:</p>
+              <p class="text-xl pb-5">Facebook: https://www.facebook.com/settings/?tab=ads</p>
+              <p class="text-xl pb-5">Google: https://www.google.com/settings/ads/anonymous</p>
+              <p class="text-xl pb-5">Bing: https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</p>
+              <p class="text-xl pb-5">Vous pouvez également désactiver ces services en visitant le partenariat publicitaire du portail de blocage numérique .: http://optout.aboutads.info/.</p>
+              <p class="text-xl pb-5">Ne pas suivre</p>
+              <p class="text-xl pb-5">N'oubliez pas que nous ne modifions pas la collecte de données et que nous utilisons les pratiques de notre site Web si vous ne suivez pas le signal de votre navigateur.</p>
+              <p class="text-xl pb-5">Tes droits</p>
+              <p class="text-xl pb-5">Si vous êtes un habitant européen, vous avez le droit d'accéder à vos données personnelles stockées dans vous et de demander la rectification, la mise à niveau ou la suppression des données personnelles. Si vous souhaitez pratiquer correctement, les contacts ne sont pas mis à jour dans les coordonnées de contact ci-dessous.</p>
+              <p class="text-xl pb-5">Si vous êtes un habitant européen, nous répondrons à vos données à vos données pour répondre à nos contrats avec vous (par exemple via le site Web) ou autrement, sinon confirmez nos intérêts commerciaux légitimes énumérés ci-dessus. Les données SUS seront transférées en Europe, y compris Le Canada et les États-Unis.</p>
+              <p class="text-xl pb-5">Rétention</p>
+              <p class="text-xl pb-5">Si vous faites une commande via le site Web, nous conservons les informations de l'ordre de nos dossiers, à moins que vous ne vous demandiez d'éliminer ces informations.</p>
+              <p class="text-xl pb-5">modifier</p>
+              <p class="text-xl pb-5">Nous pouvons mettre à jour ces politiques sur la vie privée de temps en temps, par exemple, afin de refléter les changements de nos pratiques ou d'autres raisons opérationnelles, juridiques ou réglementaires.</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+    <footer class="border-t border-gray-200">
+      <div
+        class="
+          container
+          flex flex-col flex-wrap
+          px-4
+          py-16
+          mx-auto
+          md:items-center
+          lg:items-start
+          md:flex-row md:flex-nowrap
+          
+          
+        "
+      >
+        <div
+          class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left"
+        >
+          <a
+            class="
+              flex
+              items-center
+              justify-center
+              text-4xl
+              font-bold
+              text-blue-700
+              md:justify-start
+            "
+          >
+            lupenit
+          </a>
+          <div class="flex mt-4">
+            <input
+              type="text"
+              class="
+                h-auto
+                p-2
+                text-sm
+                border border-grey-light
+                round
+                text-grey-dark
+              "
+              placeholder="L'adresse de la boîte aux lettres"
+            />
+            <button class="h-auto p-3 text-xs text-white bg-red-600 rounded-sm">
+              Inscription
+            </button>
+          </div>
+          <div class="flex justify-center mt-4 lg:mt-2">
+            <a href="https://facebook.com">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="ml-3">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-blue-300"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="ml-3">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-pink-400"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="ml-3">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="justify-between w-full mt-4 text-center lg:flex">
+          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+            <h2 class="mb-2 font-bold tracking-widest text-gray-900">
+              Navigation Rapide
+            </h2>
+            <ul class="mb-8 space-y-2 text-sm list-none">
+              <li>
+                <a href="./index.html" class="text-gray-600 hover:text-gray-800">Maison</a>
+              </li>
+              <li>
+                <a href="./privacykuretikesakurler.html" class="text-gray-600 hover:text-gray-800">Politique de confidentialité</a>
+              </li>
+              <li>
+                <a href="./contactuserinekorlaser.html" class="text-gray-600 hover:text-gray-800">En contact avec nous</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center -mt-12">
+        <p class="text-base text-gray-400">
+          Tous les droits sont réservés lupenit 2021
+        </p>
+      </div>
+    </footer>
+                        
+                
+                    </body>
+                </html>
+                
